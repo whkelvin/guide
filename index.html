@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Guide</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <div id="audio"></div>
+    <div>
+      <div class="mb-4">
+        <h1>Current Node</h1>
+        <h1 id="currentNode">Node</h1>
+      </div>
+
+      <h1>Tree</h1>
+      <pre>
+- Node 0
+  └─ Node 0-0
+       └─ Node 0-0-0
+       └─ Node 0-0-1
+  └─ Node 0-1
+
+- Node 1
+  └─ Node 1-0
+  └─ Node 1-1
+  </pre
+      >
+    </div>
+
+    <div class="flex flex-col">
+      <button
+        class="m-5 bg-blue-500 text-white font-bold py-2 px-4 rounded"
+        onclick="onNextClicked()"
+      >
+        next
+      </button>
+      <button
+        class="m-5 bg-blue-500 text-white font-bold py-2 px-4 rounded"
+        onclick="onPrevClicked()"
+      >
+        prev
+      </button>
+      <button
+        class="m-5 bg-blue-500 text-white font-bold py-2 px-4 rounded"
+        onclick="onSelectClicked()"
+      >
+        select
+      </button>
+      <button
+        class="m-5 bg-blue-500 text-white font-bold py-2 px-4 rounded"
+        onclick="onBackClicked()"
+      >
+        back
+      </button>
+    </div>
+
+    <script src="index.js"></script>
+  </body>
+</html>
